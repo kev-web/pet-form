@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Pet Form</title>
+</head>
+<body>
+    
+    <div class="container mt-5 petForm">
+        <div class="row align-items-center">
+            <div class="col-sm-6">
+                <h1 class="display-3 mb-3 p-5">Enter your Pet Info:</h1>
+            </div>
+            <div class="col-sm-6 text-center">
+                <img src="./images/doggo.png" alt="" class="img-fluid dogLogo">
+            </div>
+        </div>
+
+        <form action="" class="mb-5">
+
+            <div class="row justify-content-center">
+                <div class="col-sm-5 border-bottom p-3 m-3">
+                    <label for="petName" class="form-label mb-3">Name:</label>
+                    <div class="container-fluid mb-2">
+                        <input type="text" class="form-control" id="petName">
+                    </div>
+                </div>
+                <div class="col-sm-5 border-bottom p-3 m-3">
+                    <label for="petOwner" class="form-labe mb-3">Owner:</label>
+                    <div class="container-fluid mb-2">
+                        <input type="text" class="form-control" id="petOwner">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-sm-5 border-bottom p-3 m-3">
+                    <label for="petSpecies" class="form-label mb-3">Species:</label>
+                    <div class="container-fluid mb-2">
+                        <select class="form-select" name="species" id="petSpecies">
+                            <option value="dog">Dog</option>
+                            <option value="cat">Cat</option>
+                            <option value="fish">Fish</option>
+                            <option value="turtle">Turtle</option>
+                            <option value="iguana">Iguana</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-5 border-bottom p-3 m-3">
+                    <label for="petCountry" class="form-label mb-3">Country:</label>
+                    <div class="container-fluid mb-2">
+                        <select class="form-select" name="species" id="petCountry">
+                            <option value="dog">Honduras</option>
+                            <option value="cat">United States of America</option>
+                            <option value="fish">Panama</option>
+                            <option value="turtle">Japan</option>
+                            <option value="iguana">England</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-sm-5 border-bottom p-3 m-3">
+                    <label for="petYears" class="form-label mb-3">Years:</label>
+                    <div class="container-fluid text-center">
+                        <input type="range" class="form-control mb-3" id="petYears" min="0" max="25" step="1.0" oninput="this.nextElementSibling.value = this.value">
+                        <output>0</output>
+                    </div>
+                </div>
+               
+                <div class="col-sm-5 border-bottom p-3 m-3">
+                    <label for="petMonths" class="form-label mb-3">Months:</label>
+                    <div class="container-fluid text-center">
+                        <input type="range" class="form-control mb-3" id="petMonths" min="0" max="12" step="1.0" oninput="this.nextElementSibling.value = this.value">
+                        <output>0</output>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-sm-5 border-bottom p-3 m-3">
+                    <label for="petWeight" class="form-label mb-3">Weight (lbs):</label>
+                    <div class="container-fluid text-center">
+                        <input type="range" class="form-control mb-3" id="petWeight" min="1" max="150" oninput="this.nextElementSibling.value = this.value">
+                        <output>0</output>
+                    </div>
+                </div>
+                <div class="col-sm-5 border-bottom p-3 m-3">
+                    <label for="petHeight" class="form-label mb-3">Height (cm):</label>
+                    <div class="container-fluid text-center">
+                        <input type="range" class="form-control mb-3" id="petHeight" min="1" max="150" oninput="this.nextElementSibling.value = this.value">
+                        <output>0</output>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-sm-5 border-bottom p-3 m-3">
+                    <p>Symptoms:</p>
+                    <div class="container-fluid">
+                        <div class="form-check form-switch mb-2">
+                            <input type="checkbox" class="form-check-input" id="symptomOne">
+                            <label for="symptomOne" class="form-check-label">Dry Cough</label>
+                        </div>
+                        <div class="form-check form-switch mb-2">
+                            <input type="checkbox" class="form-check-input" id="symptomTwo">
+                            <label for="symptomTwo" class="form-check-label">Tiredness</label>
+                        </div>
+                        <div class="form-check form-switch mb-2">
+                            <input type="checkbox" class="form-check-input" id="symptomThree">
+                            <label for="symptomThree" class="form-check-label">Loss of Appetite</label>
+                        </div>
+                        <div class="form-check form-switch mb-2">
+                            <input type="checkbox" class="form-check-input" id="symptomFour">
+                            <label for="symptomFour" class="form-check-label">Runny Nose</label>
+                        </div>
+                        <div class="form-check form-switch mb-2">
+                            <input type="checkbox" class="form-check-input" id="symptomFive">
+                            <label for="symptomFive" class="form-check-label">High Fever</label>
+                        </div>
+                        <div class="form-check form-switch mb-2">
+                            <input type="checkbox" class="form-check-input" id="symptomSix">
+                            <label for="symptomSix" class="form-check-label">Itchiness</label>
+                        </div>
+                        <div class="form-check form-switch mb-2">
+                            <input type="checkbox" class="form-check-input" id="symptomSeven">
+                            <label for="symptomSeven" class="form-check-label">Increased Thirst</label>
+                        </div>
+                        <div class="form-check form-switch mb-2">
+                            <input type="checkbox" class="form-check-input" id="symptomEight">
+                            <label for="symptomEight" class="form-check-label">Dizziness</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-5 border-bottom p-3 m-3">
+                    <label for="petComments" class="form-label mb-3">Comments:</label>
+                    <div class="container-fluid text-center">
+                        <textarea id="petComments" cols="30" rows="10" class="form-control"></textarea>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container text-center mt-5">
+                <button type="submit" class="btn btn-success mb-5">Submit</button>
+            </div>
+
+            
+        </form>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" 
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" 
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>
